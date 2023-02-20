@@ -1,5 +1,8 @@
 # My React Portfolio Website
 
+The site was initially created using HTML-CSS-Javascript
+
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
