@@ -1,26 +1,14 @@
-import React from "react";
+import React from 'react';
+import Pill from "./Pill";
 
 function Home() {
   return (
     <>
       <section>
         <h2 className="intro-title">Hi, I am a Web Developer experienced in both Frontend and Backend technologies. </h2>
-        <p>
-          <span className="pill">HTML</span>
-          <span className="pill">CSS</span>
-          <span className="pill">JavaScript</span>
-          <span className="pill">Python</span>
-          <span className="pill">Bootstrap</span>
-          <span className="pill">Flask</span>
-          <span className="pill">Git</span>
-          <span className="pill">Github</span>
-          <span className="pill">React</span>
-          <span className="pill">Kanban</span>
-          <span className="pill">Trello</span>
-        </p>
+        <Pill />
         <img className="intro-image" src="https://picsum.photos/200" alt="My profile" />
       </section>
-      <hr />
       <section className="about" id="about">
         <h3 className="about-title">About Me</h3>
         <p>
