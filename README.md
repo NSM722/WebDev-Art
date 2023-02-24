@@ -2,6 +2,12 @@
 
 The site was initially created using HTML-CSS-Javascript
 
+## Improvements
+ - Code Refactoring
+ - Responsiveness
+ - Styling on the Projects Route
+
+ ---
 
 ## Getting Started with Create React App
 
