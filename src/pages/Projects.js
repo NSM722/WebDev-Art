@@ -17,7 +17,7 @@ function Projects() {
         setMyRepos(data)
       })
       .catch(err => console.error(err))
-  }, [])
+  }, [baseURL])
 
   const filteredRepos = myRepos.filter(repo => reposNames.includes(repo.name));
   console.log(filteredRepos)
