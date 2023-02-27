@@ -7,8 +7,6 @@ function Skills() {
       key={id}
       className="dev-icon"
       src={src}
-      // height="110"
-      // width="110"
       alt={description} />
   ))
 
