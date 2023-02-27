@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 function Projects() {
   const [myRepos, setMyRepos] = useState([])
-  const baseURL = `https://api.github.com/users/NSM722/repos`
 
   const reposNames = [
     'CycleHub', 'Personal-Dashboard', 'Restaurant-Ordering-App',
@@ -11,25 +10,23 @@ function Projects() {
   ]
 
   useEffect(() => {
-    fetch(baseURL)
+    fetch(`https://api.github.com/users/NSM722/repos`)
       .then(response => response.json())
       .then(data => {
         setMyRepos(data)
       })
       .catch(err => console.error(err))
-  }, [baseURL])
+  }, [])
 
   const filteredRepos = myRepos.filter(repo => reposNames.includes(repo.name));
-  console.log(filteredRepos)
 
-  const reposToDisplay = filteredRepos.map(item => (
-    <div className="project-card" key={item.id}>
+  const reposToDisplay = filteredRepos.map(({ homepage, id, name }) => (
+    <div className="project-card" key={id}>
       <a className="project-link"
-        href={item.homepage}
+        href={homepage}
         target="_blank"
         rel="noreferrer">
-        <img className="project-img" src="https://picsum.photos/id/8/200" alt={item.name} />
-        <div className="project-description">{item.name}</div>
+        <div className="project-description">{name}</div>
       </a>
     </div>
   ))

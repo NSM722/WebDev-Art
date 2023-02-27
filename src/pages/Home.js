@@ -5,7 +5,7 @@ import Me from '../images/Me.png'
 function Home() {
   return (
     <>
-      <section className='intro paddingXY'>
+      <section className='intro'>
         <div className='intro-body'>
           <h2 className='intro-title'>Hi, I am a Web Developer experienced in both Frontend and Backend technologies. </h2>
           <p>

@@ -68,7 +68,7 @@ header {
   top: 0;
 }
 
-#root {
+.container {
   margin-top: 12em;
 }
 
@@ -147,26 +147,29 @@ nav a:focus {
 /* Projects */
 .project-card {
   max-width: 100%;
-  width: 300px;
-  height: 200px;
-}
-
-.project-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border: none groove var(--black);
-}
-
-.project-card:focus,
-.project-card:hover {
-  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.2),
-    0px -6px 10px 2px rgba(0, 0, 0, 0.2);
-  transform: translateY(-5px);
+  width: 270px;
+  height: 180px;
+  /* https://coolors.co/gradient-maker */
+  background: linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+  background: -moz-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+  background: -webkit-linear-gradient(90deg, hsla(239, 94%, 14%, 1) 0%, hsla(190, 68%, 50%, 1) 100%);
+  background: hsla(239, 94%, 14%, 1);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#020344", endColorstr="#28B8D5", GradientType=1);
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
 }
 
 .project-link {
-  position: relative;
+  text-decoration: none;
+  color: #BDD8F1;
+
+}
+
+.project-description {
+  color: inherit;
+  text-decoration: none;
+  padding: 2em;
 }
 
 .projects-wrapper {
@@ -179,17 +182,11 @@ nav a:focus {
   padding: 2em;
 }
 
-
-/* Image Banner */
-.project-description {
-  background: #1B262C;
-  color: var(--light-grey);
-  text-shadow: 0 0 5px black;
-  padding: .1em .24em;
-  font-size: .9rem;
-  position: absolute;
-  bottom: 5px;
-  left: 0;
+.project-card:focus,
+.project-card:hover {
+  box-shadow: 0px 6px 10px 2px rgba(0, 0, 0, 0.2),
+    0px -6px 10px 2px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
 }
 
 /* Contact Section */
@@ -201,7 +198,10 @@ nav a:focus {
   flex-basis: auto;
   gap: 15px;
   padding: 2em;
+}
 
+.icons div {
+  background-color: #fff;
 }
 
 .icons div a {
@@ -231,10 +231,6 @@ nav a:focus {
   text-align: center;
 }
 
-.paddingXY {
-  padding: 1.7em 2.5em;
-}
-
 .dev-icon {
   padding: .3em 1em;
   margin: 0 .1em;
@@ -257,7 +253,7 @@ nav a:focus {
 }
 
 @media(min-width: 40em) {
-  #root {
+  .container {
     margin-top: 4em;
   }
 
@@ -290,7 +286,7 @@ nav a:focus {
     font-size: var(--body-lg-fs);
   }
 
-  #root {
+  .container {
     margin-top: 4em;
   }
 
@@ -317,10 +313,6 @@ nav a:focus {
     width: 280px;
     height: 280px;
   }
-
-  /* .skills {
-    margin: 2em 0;
-  } */
 
   .dev-icon {
     width: 110px;

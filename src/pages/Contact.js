@@ -3,7 +3,7 @@ import React from 'react';
 function Contact() {
   return (
     <>
-      <section className='icons paddingXY'>
+      <section className='icons'>
         <div>
           <a href="https://www.linkedin.com/in/natalie-mbatha/" target="_blank"
             rel="noreferrer"><i className="fa-brands fa-linkedin"></i>
