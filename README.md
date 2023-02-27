@@ -1,11 +1,9 @@
 # My React Portfolio Website
 
-The site was initially created using HTML-CSS-Javascript
+The site was initially created using HTML-CSS-Javascript and later re-developed in React
 
-## Improvements
- - Code Refactoring
- - Responsiveness
- - Styling on the Projects Route
+Visit [my portfolio](https://nsmbatha.netlify.app/ "nsmbatha") and feel free to connect 😊 
+
 
  ---
 
