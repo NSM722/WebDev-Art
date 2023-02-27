@@ -162,8 +162,8 @@ nav a:focus {
 
 .project-link {
   text-decoration: none;
-  color: #BDD8F1;
-
+  color: var(--light-grey);
+  text-shadow: 0 0 5px var(--black);
 }
 
 .project-description {
