@@ -2,6 +2,17 @@
 
 The site was initially created using HTML-CSS-Javascript and later re-developed in React
 
+I selected the repository name ***WebDev-Art*** to reflect the artistic nature of web development
+
+I'm convinced that designing and coding a high-quality application requires:
+
+ - creativity
+ - attention to detail
+ - and an understanding of design principles 
+ 
+By combining these skills, web developers can create visually stunning and functional websites and applications that are works of art in their own right
+
+
 Visit [my portfolio](https://nsmbatha.netlify.app/ "nsmbatha") and feel free to connect 😊 
 
 
