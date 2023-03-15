@@ -236,6 +236,12 @@ nav a:focus {
   margin: 0 .1em;
   width: 80px;
   height: 50px;
+  cursor: pointer;
+  transform: transform .1s ease-in-out;
+}
+
+.dev-icon:hover {
+  transform: translate(1px, 1px);
 }
 
 .accent-link {
@@ -315,8 +321,8 @@ nav a:focus {
   }
 
   .dev-icon {
-    width: 110px;
-    height: 110px;
+    width: 85px;
+    height: 85px;
   }
 
   .icons {
