@@ -11,10 +11,10 @@ function Home() {
           <p>
             I specialize in creating responsive websites and applications with a focus on optimizing
             the user experience and providing necessary backend support. I use organizational tools like
-            Trello boards and Kanban to manage my projects efficiently. I am committed to
-            learning new stacks, working collaboratively, and following web performance and accessibility
-            best practices. I enjoy attending tech meetups, conferences and exploring opportunities to contribute
-            to open-source projects.
+            Trello boards and Kanban to manage my projects efficiently, while I am also well-versed in agile 
+            methodologies. I am committed to learning new stacks, working collaboratively, following web performance 
+            and accessibility best practices. I actively engage in the tech community by attending tech meetups, conferences 
+            and exploring opportunities to contribute to open-source projects.
           </p>
         </div>
         <img className='intro-image' src={Me} alt='Myself smiling' />
