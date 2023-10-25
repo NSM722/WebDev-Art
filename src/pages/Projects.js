@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 function Projects() {
   const [myRepos, setMyRepos] = useState([])
+  const [isLoading, setIsLoading] = useState(false);
 
   const reposNames = [
     'QuoteGenie', 'Personal-Dashboard', 
@@ -11,10 +12,12 @@ function Projects() {
   ]
 
   useEffect(() => {
+    setIsLoading(true)
     fetch(`https://api.github.com/users/NSM722/repos?page=1&per_page=1000`)
       .then(response => response.json())
       .then(data => {
         setMyRepos(data)
+        setIsLoading(false)
       })
       .catch(err => console.error(err))
   }, [])
@@ -35,7 +38,11 @@ function Projects() {
   return (
     <>
       <section className="projects-wrapper">
-        {reposToDisplay}
+        {
+        isLoading ? 
+        <h2>Fetching results, please be patient...</h2> :
+        reposToDisplay
+      }
       </section>
     </>
   )
