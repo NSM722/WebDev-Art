@@ -4,13 +4,14 @@ function Projects() {
   const [myRepos, setMyRepos] = useState([])
 
   const reposNames = [
-    'CycleHub', 'Personal-Dashboard', 'Restaurant-Ordering-App',
-    'Responsive-semantically-structured-website', 'Color-Scheme-Generator',
-    'Language-exchange-app'
+    'QuoteGenie', 'Personal-Dashboard', 
+    'Customer-Snap-Dashboard', 'symmetrical-giggle',
+    'Profile-Navigator','Color-Scheme-Generator',
+    'Expense_Tracker','Fun-Sports-Trivia', 'CycleHub',
   ]
 
   useEffect(() => {
-    fetch(`https://api.github.com/users/NSM722/repos`)
+    fetch(`https://api.github.com/users/NSM722/repos?page=1&per_page=1000`)
       .then(response => response.json())
       .then(data => {
         setMyRepos(data)
@@ -20,13 +21,13 @@ function Projects() {
 
   const filteredRepos = myRepos.filter(repo => reposNames.includes(repo.name));
 
-  const reposToDisplay = filteredRepos.map(({ homepage, id, name }) => (
+  const reposToDisplay = filteredRepos.map(({ homepage, id, name, html_url }) => (
     <div className="project-card" key={id}>
       <a className="project-link"
-        href={homepage}
+        href={homepage || html_url}
         target="_blank"
         rel="noreferrer">
-        <div className="project-description">{name}</div>
+        <div className="project-description">{name !== 'symmetrical-giggle' ? name : 'QuoteGenie Mobile App'}</div>
       </a>
     </div>
   ))
