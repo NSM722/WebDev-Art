@@ -1,13 +1,13 @@
 const skills = [
   {
-    id: 1,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    description: "React"
-  },
-  {
     id: 2,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
     description: "JavaScript"
+  },
+  {
+    id: 8,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    description: "Typescript"
   },
   {
     id: 3,
@@ -25,31 +25,50 @@ const skills = [
     description: "Bootstrap"
   },
   {
-    id: 6,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg",
-    description: "Jest"
-  },
-  {
     id: 7,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-    description: "Python"
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+    description: "TailwindCSS"
   },
   {
-    id: 8,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
-    description: "Trello"
+    id: 1,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    description: "React"
   },
   {
-    id: 9,
-    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    description: "VSCode"
+    id: 6,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+    description: "NextJs"
+  },
+  {
+    id: 12,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-plain.svg",
+    description: "MaterialUI"
+  },
+  {
+    id: 11,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-plain.svg",
+    description: "Flutter"
   },
   {
     id: 10,
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
     description: "Git"
+  },
+  {
+    id: 13,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original-wordmark.svg",
+    description: "Jira",
+  },
+  {
+    id: 14,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-plain-wordmark.svg",
+    description: "AndroidStudio",
+  },
+  {
+    id: 15,
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg",
+    description: "VSCODE",
   }
 ]
-
 
 export default skills;
